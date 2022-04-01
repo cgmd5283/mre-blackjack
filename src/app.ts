@@ -265,7 +265,7 @@ export default class MREBlackjack {
     }
     private async loadCardTextures() {
         const cardTexturePromise = this.assets.createTexture('card', {
-            uri: `savages-blackjack-mre.herokuapp.com/card-texture-sheet.png`,
+            uri: `/card-texture-sheet.png`,
             // resolution: {x: 2048, y: 2048}
         });
         this.cardTextureSheet = cardTexturePromise;
@@ -480,7 +480,7 @@ export default class MREBlackjack {
         // Load a glTF model
         const yesButtonPromise = Actor.CreateFromGltf(this.assets, {
             // at the given URL
-            uri: `savages-blackjack-mre.herokuapp.com/UI/BlackjackUI_Button_Yes.glb`,
+            uri: `/UI/BlackjackUI_Button_Yes.glb`,
             // and spawn box colliders around the meshes.
             colliderType: 'box',
             // Also apply the following generic actor properties.
@@ -506,7 +506,7 @@ export default class MREBlackjack {
 
         const hitButtonPromise = Actor.CreateFromGltf(this.assets, {
             // assigning the actor an art asset
-            uri: `savages-blackjack-mre.herokuapp.com/UI/BlackjackUI_Button_Hit.glb`,
+            uri: `/UI/BlackjackUI_Button_Hit.glb`,
             // and spawn box colliders around the meshes.
             colliderType: 'box',
             // Also apply the following generic actor properties.
@@ -529,7 +529,7 @@ export default class MREBlackjack {
 
         const stayButtonPromise = Actor.CreateFromGltf(this.assets, {
             // assigning the actor an art asset
-            uri: `savages-blackjack-mre.herokuapp.com/UI/BlackjackUI_Button_Stay.glb`,
+            uri: `/UI/BlackjackUI_Button_Stay.glb`,
             // and spawn box colliders around the meshes.
             colliderType: 'box',
             // Also apply the following generic actor properties.
@@ -553,7 +553,7 @@ export default class MREBlackjack {
 
         const doubleDownButtonPromise = Actor.CreateFromGltf(this.assets, {
             // assigning the actor an art asset
-            uri: `savages-blackjack-mre.herokuapp.com/UI/BlackjackUI_Button_DoubleDown.glb`,
+            uri: `/UI/BlackjackUI_Button_DoubleDown.glb`,
             // and spawn box colliders around the meshes.
             colliderType: 'box',
             // Also apply the following generic actor properties.
@@ -578,7 +578,7 @@ export default class MREBlackjack {
         // Load a glTF model
         this.dealButton = Actor.CreateFromGltf(this.assets, {
             // at the given URL
-            uri: `savages-blackjack-mre.herokuapp.com/UI/BlackjackUI_Button_Join.glb`,
+            uri: `/UI/BlackjackUI_Button_Join.glb`,
             // and spawn box colliders around the meshes.
             colliderType: 'box',
             // Also apply the following generic actor properties.
@@ -628,7 +628,7 @@ export default class MREBlackjack {
 
         const splitButtonPromise = Actor.CreateFromGltf(this.assets, {
             // assigning the actor an art asset
-            uri: `savages-blackjack-mre.herokuapp.com/UI/BlackjackUI_Button_Split.glb`,
+            uri: `/UI/BlackjackUI_Button_Split.glb`,
             // and spawn box colliders around the meshes.
             colliderType: 'box',
             // Also apply the following generic actor properties.
@@ -731,7 +731,7 @@ export default class MREBlackjack {
         if (game.getState().stage === 'player-turn-right') {
             Actor.CreateFromGltf(this.assets, {
                 // at the given URL
-                uri: `savages-blackjack-mre.herokuapp.com/red-arrow.glb`,
+                uri: `/red-arrow.glb`,
                 // and spawn box colliders around the meshes.
                 colliderType: 'box',
                 // Also apply the following generic actor properties.
@@ -753,7 +753,7 @@ export default class MREBlackjack {
 
             Actor.CreateFromGltf(this.assets, {
                 // at the given URL
-                uri: `savages-blackjack-mre.herokuapp.com/red-arrow.glb`,
+                uri: `/red-arrow.glb`,
                 // and spawn box colliders around the meshes.
                 colliderType: 'box',
                 // Also apply the following generic actor properties.
@@ -782,7 +782,7 @@ export default class MREBlackjack {
 
         const deskPromise = Actor.CreateFromGltf(this.assets, {
             // at the given URL
-            uri: `savages-blackjack-mre.herokuapp.com/blackjack-table-2.glb`,
+            uri: `/blackjack-table-2.glb`,
           
             // and spawn box colliders around the meshes.
             // Also apply the following generic actor properties.
