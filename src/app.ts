@@ -273,7 +273,7 @@ export default class MREBlackjack {
 
     private async loadSound() {
 
-        this.blackJackWin = this.assets.createSound('blackjackwin', { uri: 'savages-blackjack-mre.herokuapp.com/CAABlackJackWin.wav' });
+        this.blackJackWin = this.assets.createSound('blackjackwin', { uri: '/CAABlackJackWin.wav' });
 
     }
     /**
